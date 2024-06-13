@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "483215847281",
+    "firebase_url": "https://fourth-year-projects-default-rtdb.firebaseio.com",
+    "project_id": "fourth-year-projects",
+    "storage_bucket": "fourth-year-projects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483215847281:android:a23d229a96e1f85cbc90d0",
+        "android_client_info": {
+          "package_name": "com.kamwana.e_kraal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIj6SbHyU0FJjSVAtM96k2K3pC7mVIBiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483215847281:android:6293a9d84b165cf8bc90d0",
+        "android_client_info": {
+          "package_name": "com.kamwana.monitor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIj6SbHyU0FJjSVAtM96k2K3pC7mVIBiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
