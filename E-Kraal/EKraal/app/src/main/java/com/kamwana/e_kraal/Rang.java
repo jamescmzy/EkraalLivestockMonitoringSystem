@@ -3,6 +3,7 @@ package com.kamwana.e_kraal;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +41,7 @@ public class Rang extends AppCompatActivity {
 
             maxRange.setValue(max.getText().toString());
             minRange.setValue(min.getText().toString());
+            Toast.makeText(this, "data is uploaded", Toast.LENGTH_SHORT).show();
         });
 
     }
