@@ -9,34 +9,41 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PersonalProfile extends AppCompatActivity {
 
-
+    // Constants for SharedPreferences keys
     private static final String KEY_NAME = "name";
     private static final String KEY_EMAIL = "email";
+
+    // TextViews to display name and email
     TextView name, email;
 
-    String passwordStore="";
-    String nameStore="";
+    // String variables to store retrieved data
+    String nameStore = "";
+    String emailStore = "";
 
+    // SharedPreferences instance
     SharedPreferences sharedPreferences;
+
+    // Name for the SharedPreferences file
     private static final String PREFS_NAME = "MyPrefs";
-    String emailStore="";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.personal_profile);
 
+        // Initialize SharedPreferences instance
         sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-        emailStore = sharedPreferences.getString(KEY_EMAIL, "");
-        nameStore = ((SharedPreferences) sharedPreferences).getString(KEY_NAME, "");
 
+        // Retrieve stored name and email from SharedPreferences
+        emailStore = sharedPreferences.getString(KEY_EMAIL, "");
+        nameStore = sharedPreferences.getString(KEY_NAME, "");
+
+        // Initialize TextViews
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
 
+        // Set TextViews to display stored name and email
         name.setText(nameStore);
         email.setText(emailStore);
-
-
-
     }
 }

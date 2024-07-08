@@ -15,12 +15,12 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
 
-        TextView range=findViewById(R.id.range);
+        // Initialize TextView for range setting
+        TextView range = findViewById(R.id.range);
 
+        // Set OnClickListener for range TextView to start Rang activity
         range.setOnClickListener(v -> {
-
             startActivity(new Intent(Settings.this, Rang.class));
-
         });
     }
 }
